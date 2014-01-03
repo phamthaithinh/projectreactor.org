@@ -1,0 +1,11 @@
+@import url('http://fonts.googleapis.com/css?family=Montserrat|Varela+Round');
+
+body {
+  font-family: 'Varela Round', Helvetica, Arial, sans-serif;
+  font-size: 1.7em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
