@@ -6,10 +6,48 @@
 <body>
 
 <div class="container" layout:fragment="content">
-  <h1>Home</h1>
+  <div class="row teasers">
+    <div class="col-xs-12 col-lg-4">
+      <h2>Fast</h2>
 
-  <p>this is the home page</p>
-</div>f
+      <p>Reactor's <code>Selector</code>-based dispatching mechanism can pump upwards of <strong>15,000,000</strong>
+        events per second into your components using the <a href="#">LMAX Disruptor</a>-based
+        <code>RingBufferDispatcher</code>.</p>
+    </div>
+    <div class="col-xs-12 col-lg-4">
+      <h2>Scalable</h2>
+
+      <p>Reactor's components are designed to be minimalist and consume very few resources to maximize CPU and memory
+        usage in constrained environments like on cloud servers or in VMs.</p>
+    </div>
+    <div class="col-xs-12 col-lg-4">
+      <h2>Simple</h2>
+
+      <p>Reactor has a simple and straightforward API for wiring event handlers which <code>Stream</code> and <code>Promise</code>
+        build on to provide functional-style composition for succinct and readable code.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-lg-8">
+      <h2>Sample Code</h2>
+
+      <script src="https://gist.github.com/jbrisbin/8244393.js"></script>
+    </div>
+    <div class="col-xs-12 col-lg-4">
+      <a class="twitter-timeline" href="https://twitter.com/ProjectReactor" data-widget-id="357868564667064320">Tweets
+        by @ProjectReactor</a>
+      <script>!function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+          js = d.createElement(s);
+          js.id = id;
+          js.src = p + "://platform.twitter.com/widgets.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }
+      }(document, "script", "twitter-wjs");</script>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>

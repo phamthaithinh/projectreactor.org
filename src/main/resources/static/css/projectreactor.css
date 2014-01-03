@@ -1,11 +1,258 @@
 @import url('http://fonts.googleapis.com/css?family=Montserrat|Varela+Round');
 
 body {
+  color: #34302d;
   font-family: 'Varela Round', Helvetica, Arial, sans-serif;
-  font-size: 1.7em;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   font-weight: normal;
+}
+
+a {
+  color: #34302d;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width:1170px;
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* =========== [ header ] =========== */
+
+.navbar {
+  background-color: #34302d;
+  background-image: none;
+  border: 0;
+  margin: 0;
+}
+
+.navbar-inner {
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin: 0 auto;
+  max-width: 1170px;
+  min-height: 70px;
+  padding: 0;
+  width: auto;
+}
+
+.navbar .brand {
+  background: url(../img/reactor-logo-small.png) no-repeat 0 15px;
+  color: #ebf1e7;
+  display: block;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  padding:25px 10px 25px 50px;
+  -webkit-text-shadow: none;
+  -moz-text-shadow: none;
+  text-shadow: none;
+  text-decoration: none;
+}
+
+.navbar .navbar-link a {
+  color: #ebf1e7;
+  font-family: "Montserrat",sans-serif;
+  text-transform: uppercase;
+  text-shadow: none;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 14px;
+  padding: 28px 20px;
+  transition: all 0.15s;
+  -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  -ms-transition: all 0.15s;
+}
+
+.navbar .navbar-link a:hover {
+  background-color: #666;
+  color: #ebf1e7;
+}
+
+.navbar .reactor-social {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+.navbar .reactor-social li {
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .reactor-social a {
+  background-image: url(../img/social-icons.png);
+  background-repeat: no-repeat;
+  display: block;
+  height: 32px;
+  margin: 19px 6px;
+  position: relative;
+  text-indent: -9999px;
+  width: 32px;
+}
+
+.navbar .reactor-social .twitter {
+  background-position: -11px -11px;
+}
+
+.navbar .reactor-social .twitter:hover {
+  background-position: -11px -54px;
+}
+
+.navbar .reactor-social .github {
+  background-position: -54px -11px;
+}
+
+.navbar .reactor-social .github:hover {
+  background-position: -54px -54px;
+}
+
+.navbar .reactor-social .docs {
+  background-position: -97px -11px;
+}
+
+.navbar .reactor-social .docs:hover {
+  background-position: -97px -54px;
+}
+
+.navbar .reactor-social .forums {
+  background-position: -140px -11px;
+}
+
+.navbar .reactor-social .forums:hover {
+  background-position: -140px -54px;
+}
+
+/* =========== [ billboard ] =========== */
+
+.billboard--wrapper {
+  background-color: #666;
+  color: #ebf1e7;
+  margin: 0 0 20px 0;
+  padding-top: 70px;
+  position: relative;
+  width: 100%;
+}
+
+.billboard--container {
+  background: url(../img/reactor-logo-large.png) no-repeat right;
+  padding:50px 0;
+  margin: auto;
+  max-width: 1210px;
+  width:100%;
+}
+
+.billboard--container a {
+  color: #ebf1e7;
+}
+
+/* =========== [ panels ] =========== */
+.panel {
+  border: 1px solid #797979;
+}
+
+.panel-heading {
+  border-bottom: 1px solid #797979;
+  padding: 20px;
+}
+
+.panel-heading h1, .panel-heading h2, .panel-heading h3, .panel-heading h4, .panel-heading h5, .panel-heading h6 {
+  margin: 0;
+}
+
+.panel-body {
+  padding: 20px;
+}
+
+.teasers {
+  padding-bottom: 40px;
+}
+
+.article-container {
+  padding-top: 70px;
+}
+
+.article-container h2 {
+  padding-top: 40px;
+}
+
+#toc_0 {
+  padding-top: 0;
+}
+
+.feedback {
+  padding-top: 20px;
+}
+
+/* =========== [ footer ] =========== */
+
+.footer {
+  background-color: #34302d;
+  color: #eee;
+  margin-top: 40px;
+  padding: 30px 0;
+}
+
+.footer p {
+  clear: both;
+}
+
+.footer a {
+  color: #ebf1e7;
+}
+
+.footer .navbar {
+  height: 24px;
+  margin-bottom: 24px;
+}
+
+.footer .navbar .nav {
+  float: none;
+}
+
+.footer .navbar .nav a {
+  color: #ebf1e7;
+  font-size: 12px;
+  font-weight: 400;
+  padding:0 17px;
+  text-transform: uppercase;
+  text-shadow: none;
+}
+
+.footer .navbar .nav a:hover {
+  background-color: #34302d;
+}
+
+.footer .nav li:first-child a {
+  padding-left: 0;
 }
