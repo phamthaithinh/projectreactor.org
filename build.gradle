@@ -2,6 +2,8 @@ ext {
 	bootVersion = '1.1.0.M2'
 	thymeleafVersion = '2.1.2.RELEASE'
 	hsqldbVersion = '2.2.9'
+	sourceCompatibility = 1.7
+	targetCompatibility = 1.7
 }
 
 buildscript {
