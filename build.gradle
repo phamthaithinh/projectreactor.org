@@ -1,5 +1,5 @@
 ext {
-	bootVersion = '0.5.0.BUILD-SNAPSHOT'
+	bootVersion = '1.1.0.M2'
 	thymeleafVersion = '2.1.2.RELEASE'
 	hsqldbVersion = '2.2.9'
 }
@@ -10,7 +10,7 @@ buildscript {
 		mavenLocal()
 	}
 	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:0.5.0.BUILD-SNAPSHOT")
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:1.1.0.M2")
 	}
 }
 
@@ -20,7 +20,7 @@ apply plugin: 'spring-boot'
 
 jar {
 	baseName = 'projectreactor'
-	version = '0.1.0'
+	version = '0.2.0'
 }
 
 repositories {
@@ -48,5 +48,5 @@ dependencies {
 }
 
 task wrapper(type: Wrapper) {
-	gradleVersion = '1.9'
+	gradleVersion = '1.12'
 }
