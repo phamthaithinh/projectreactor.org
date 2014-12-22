@@ -23,7 +23,7 @@
 		</encoder>
 	</appender>
 
-	<logger name="org.projectreactor" level="debug"/>
+	<logger name="io.projectreactor" level="debug"/>
 	<logger name="org.springframework" level="info"/>
 
 	<root level="warn">
